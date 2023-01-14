@@ -5,6 +5,13 @@ $('.gnb > a, .gnb-sub').mouseover(function(){
 $('.gnb > a, .gnb-sub').mouseleave(function(){
     $('.gnb-sub').stop().fadeOut();
 })
+// translate
+$('.translate-wrap > .translate').click(function(){
+  $('.translate-wrap > .translate-box').stop().fadeIn();
+})
+$('.translate-wrap > .translate-box').click(function(){
+  $('.translate-wrap > .translate-box').stop().fadeOut();
+})
 // slider
 let slides = document.querySelector('.slides');
 let slideImg = document.querySelectorAll('.slides li');
