@@ -70,3 +70,8 @@ $('.tab-list li').click(function(){
     $('.tab-list-wrap').fadeOut();
     $('#' + $(this).attr('data-alt')).fadeIn();
 });
+// trigger
+$('.trigger').click(function(){
+  $(this).toggleClass('active');
+  $('.gnb').toggleClass('on');
+})
